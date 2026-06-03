@@ -200,10 +200,14 @@ section iframe { /* Selector por Etiqueta */
      text-align: center;
      margin-top: 50px;
      margin-bottom: 50px;
+     /* border: 1px dashed yellow; */
 }
 
 #formulario h2 {
      /* Estilo del título del formulario (color, tamaño) */
+     color: #fff;
+     font-size: 2.4em;
+     margin-bottom: 40px;
 }
 
 #formulario form { /* Selector por ID + Etiqueta */
@@ -220,7 +224,7 @@ section iframe { /* Selector por Etiqueta */
 
     background-color: #1c1c1c;
     padding: 30px;
-    border-radius: 15px;
+    border-radius: 10px;
     border: 1px solid #333;
     box-shadow: 0 10px 25px rgba(0, 0, 0, 0.75);
 }
@@ -230,9 +234,11 @@ section iframe { /* Selector por Etiqueta */
     /* Ajustar margen inferior para separarla del input */
     /* Aplicar color de texto */
     /* Opcional: Hacer el texto en negrita */
-    background-color: #333333;
+    background-color: transparent;
     text-align: left;
+    color: #b3b3b3;
     font-weight: bold;
+    font-size: 0.8em;
     margin-bottom: 8px;
 }
 
@@ -244,9 +250,13 @@ section iframe { /* Selector por Etiqueta */
     /* Aplicar borde y bordes redondeados */
     /* Aplicar color de fondo (ligeramente diferente al fondo del formulario) */
     /* Aplicar color de texto */
-    padding: 8px;
+    background-color: #333;
+    color: #fff;
+    border-radius: 8px;
+    padding: 4px;
     font-size: 1em;
     margin-bottom: 6px;
+    outline: none;
 }
 
 #formulario button[type="submit"] { /* Selector por Etiqueta con Atributo */
@@ -257,11 +267,21 @@ section iframe { /* Selector por Etiqueta */
     /* Aplicar bordes redondeados */
     /* Cambiar el cursor al pasar el ratón */
     /* Ajustar tamaño de fuente */
+    background-color: #eb676e;
+    color: #fff;
+    padding: 8px;
+    border: none;
+    border-radius: 4px;
+    font-size: 1.2em;
+    font-weight: bold;
+    cursor: pointer;
 
+    transition: all 0.3s ease-in-out;
 }
 
 #formulario button[type="submit"]:hover { /* Pseudo-clase :hover: Estilo del botón al pasar el ratón */
     /* Cambiar el color de fondo (un tono más oscuro del color de marca) */
+    background-color:  #e50914;
 }
 
 
