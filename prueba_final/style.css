@@ -66,16 +66,53 @@ hr {
     display: inline-block;
     text-decoration: none;
     color: #fff;
-
+    padding: 8px 16px;
+    margin: 0 10px;
+    border-radius: 4px;
+    transition: all 0.3s ease-in-out;
 }
+
 
 .menu a:hover { /* Pseudo-clase :hover: Estilo al pasar el ratón por los enlaces */
     /* Cambiar el color de fondo */
     /* Cambiar el color del texto */
+    background-color: rgba(255, 255, 255, 0.1);
     color: #e50914;
 
 }
 
+.menu1 { /* Selector por Clase (el <nav>) */
+    /* Ajustar el margen o posición para separarlo visualmente del logo */
+    /* Asegurar que sus hijos (los enlaces) se alineen correctamente */
+        display: flex;
+        flex-direction: row-reverse;
+        padding-right: 50px;
+}
+
+.menu1 a { /* Selector por Etiqueta + Clase (enlaces dentro del menú) */
+    /* Asegurar que cada enlace se comporte como un bloque en línea para poder aplicar padding y margin */
+    /* Eliminar el subrayado por defecto */
+    /* Aplicar color de texto (claro) */
+    /* Añadir espacio interno (padding) para hacer el área clickeable más grande */
+    /* Añadir margen horizontal para separar los enlaces entre sí */
+    /* Opcional: Transición suave para efectos hover */
+    display: inline-block;
+    text-decoration: none;
+    color: #fff;
+    padding: 8px 16px;
+    margin: 0 10px;
+    border-radius: 4px;
+    transition: all 0.3s ease-in-out;
+}
+
+
+.menu1 a:hover { /* Pseudo-clase :hover: Estilo al pasar el ratón por los enlaces */
+    /* Cambiar el color de fondo */
+    /* Cambiar el color del texto */
+    background-color: rgba(255, 255, 255, 0.1);
+    color: #e50914;
+
+}
 
 /* Estilos para el Contenido Principal */
 main { /* Selector por Etiqueta */
@@ -93,7 +130,7 @@ section { /* Selector por Etiqueta */
     /* Añadir espacio debajo de cada sección para separarlas visualmente */
     /* Opcional: Aplicar un color de fondo o padding interno si se desean secciones con fondo distinto al body */
     /* Opcional: Bordes redondeados para las secciones */
-    margin-bottom: 40px;
+    margin-bottom: 10px;
     padding: 20px;
     border-radius: 4px;
 }
@@ -124,8 +161,8 @@ section p { /* Selector por Etiqueta (párrafos de sección) */
 .peliculas { /* Selector por Clase */
     display: flex;
     flex-wrap: wrap;
-    justify-content: space-evenly;
-    align-items: flex-start;
+    justify-content: space-between;
+    align-items: stretch;
     gap: 20px;
     margin-bottom: 30px;
 }
@@ -173,8 +210,19 @@ section p { /* Selector por Etiqueta (párrafos de sección) */
 .beneficios { /* Selector por Clase */
     /* Eliminar los marcadores de lista (viñetas) */
     /* Eliminar padding y margin por defecto */
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    color: #ccc;
 }
 
+.beneficios li {
+    margin-bottom: 8px;
+}
+
+.beneficios li::before {
+    content: "🍿 ";
+}
 
 /* Estilos para el Video */
 section iframe { /* Selector por Etiqueta */

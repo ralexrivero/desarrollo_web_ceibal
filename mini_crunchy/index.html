@@ -3,15 +3,23 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>MiniFlix</title>
+  <title>Mini Crunchy</title>
   <link rel="stylesheet" href="styles.css">
+
 </head>
 
 <body>
   <header id="encabezado">
-    <h1 class="logo">MiniFlix</h1>
+    <h1 class="logo">Mini Crunchy</h1>
 
-    <nav class="menu">
+    <!-- Botón Hamburguesa Kawaii -->
+    <button id="btn-hamburguesa" class="hamburguesa" aria-label="Abrir menú">
+      <span></span>
+      <span></span>
+      <span></span>
+    </button>
+
+    <nav class="menu" id="menu-principal">
       <a href="#destacadas">Destacadas</a>
       <a href="#formulario">Suscribite</a>
     </nav>
@@ -19,35 +27,63 @@
 
   <main>
     <section id="destacadas">
-      <h2>Películas destacadas</h2>
-      <p>Según tus 🍪🍪🍪, Seleccionamos estas para vos:</p>
+      <h2>Animes destacados</h2>
+      <p>Según tus 🍣🍣🍣 (rolls), Seleccionamos estos para vos:</p>
 
       <div class="peliculas">
-        <!-- Película 1 -->
+        <!-- Anime 1: Boku no Hero Academia -->
         <div class="pelicula">
-          <img src="https://cartelera.montevideo.com.uy/imagenes_espectaculos/moviedetail13/16477.jpg" alt="Póster de El código secreto">
-          <h3 class="titulo-pelicula">El código secreto</h3>
-          <p class="sinopsis">Un enigma que cambiará el destino del mundo.</p>
+          <img src="https://imgsrv.crunchyroll.com/cdn-cgi/image/fit=contain,format=auto,quality=85,width=480,height=720/catalog/crunchyroll/acae9f5a7c079cd575a64aab3f6343b6.png" alt="Póster de My Hero Academia">
+          <h3 class="titulo-pelicula">My Hero Academia</h3>
+          <p class="sinopsis">¡Despierta tu quirk interior y conviértete en el mejor héroe!</p>
         </div>
         
-        <!-- Película 2 -->
+        <!-- Anime 2: Jujutsu Kaisen -->
         <div class="pelicula">
-          <img src="https://cartelera.montevideo.com.uy/imagenes_espectaculos/moviedetail13/16478.jpg" alt="Póster de El séptimo hijo">
-          <h3 class="titulo-pelicula">El séptimo hijo</h3>
-          <p class="sinopsis">De cara al mal reclama tu destino.</p>
+          <img src="https://imgsrv.crunchyroll.com/cdn-cgi/image/fit=contain,format=auto,quality=85,width=480,height=720/catalog/crunchyroll/d128baf30c0638fafce3fd4e7c9ff37c.png" alt="Póster de Jujutsu Kaisen">
+          <h3 class="titulo-pelicula">Jujutsu Kaisen</h3>
+          <p class="sinopsis">Hechicería, maldiciones y batallas increíbles.</p>
         </div>
         
-        <!-- Película 3 -->
+        <!-- Anime 3: Kaiju N8 -->
         <div class="pelicula">
-          <img src="https://cartelera.montevideo.com.uy/imagenes_espectaculos/moviedetail13/16475.jpg" alt="Póster de Foxcatcher">
-          <h3 class="titulo-pelicula">Foxcatcher</h3>
-          <p class="sinopsis">Un señor con el ceño fruncido.</p>
+          <img src="https://imgsrv.crunchyroll.com/cdn-cgi/image/fit=contain,format=auto,quality=85,width=480,height=720/catalog/crunchyroll/2c1650b6f77003bdd385c6ad66baa7a6.png" alt="Póster de Kaiju No. 8">
+          <h3 class="titulo-pelicula">Kaiju No. 8</h3>
+          <p class="sinopsis">¡De limpiador a monstruo para salvar el mundo!</p>
+        </div>
+
+        <!-- Anime 4: Shingeki no Kyojin -->
+        <div class="pelicula">
+          <img src="https://imgsrv.crunchyroll.com/cdn-cgi/image/fit=contain,format=auto,quality=85,width=480,height=720/catalog/crunchyroll/323c82257b2f6567fabbb7bd55bfa753.jpg" alt="Póster de Attack on Titan">
+          <h3 class="titulo-pelicula">Attack on Titan</h3>
+          <p class="sinopsis">¡Épicas batallas, secretos titánicos y pura acción!</p>
+        </div>
+
+        <!-- Anime 5: Demon Slayer -->
+        <div class="pelicula">
+          <img src="https://imgsrv.crunchyroll.com/cdn-cgi/image/fit=contain,format=auto,quality=85,width=480,height=720/catalog/crunchyroll/0e9ea4d75ede3b8542aaa2848e04cccd.png" alt="Póster de Demon Slayer">
+          <h3 class="titulo-pelicula">Demon Slayer</h3>
+          <p class="sinopsis">¡Acompaña a Tanjiro en su viaje para cazar demonios y proteger a su hermana!</p>
+        </div>
+
+        <!-- Anime 6: My Dress-Up Darling -->
+        <div class="pelicula">
+          <img src="https://imgsrv.crunchyroll.com/cdn-cgi/image/fit=contain,format=auto,quality=85,width=480,height=720/catalog/crunchyroll/af51d08cadc3f965effd394d9d241b6b.jpg" alt="Póster de My Dress-Up Darling">
+          <h3 class="titulo-pelicula">My Dress-Up Darling</h3>
+          <p class="sinopsis">Pasión por el cosplay, romance tierno y trajes hechos a mano.</p>
+        </div>
+
+        <!-- Anime 7: Our Dating Story -->
+        <div class="pelicula">
+          <img src="https://imgsrv.crunchyroll.com/cdn-cgi/image/fit=contain,format=auto,quality=85,width=480,height=720/catalog/crunchyroll/f68d42606a0985497732ce683d715d6a.jpg" alt="Póster de Our Dating Story">
+          <h3 class="titulo-pelicula">Our Dating Story</h3>
+          <p class="sinopsis">Un romance súper dulce y divertido entre dos polos completamente opuestos. 💕</p>
         </div>
       </div>
       
       <hr>
       
-      <h3>¿Por qué ver estas películas?</h3>
+      <h3>¿Por qué ver estos animes?</h3>
       <ul class="beneficios">
         <li>Top 10 en varios países</li>
         <li>Alta calidad de producción</li>
@@ -59,12 +95,11 @@
       <hr>
       <h2>Tráiler destacado</h2>
       <!-- Iframe de YouTube restaurado -->
-      <iframe src="https://www.youtube.com/embed/i-AIblqxslA" title="Ceibal Institucional" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+      <iframe width="1840" height="1012" src="https://www.youtube.com/embed/Lp0somghSdE" title="Inuyasha ~ El Castillo de Sueños en el Interior Del Espejo ~ Español" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
     </section>
 
     <section id="formulario">
-      <hr>
-      <h2>Suscribite a MiniFlix</h2>
+      <h2>Suscribite a Mini Crunchy</h2>
       <!-- Formulario con campos obligatorios (required) -->
       <form>
         <label for="nombre">Nombre</label>
@@ -79,7 +114,31 @@
   </main>
 
   <footer>
-    <p>&copy; 2025 MiniFlix. Todos los derechos reservados Ciencias de la Computación - Ceibal.</p>
+    <p>&copy; 2026 Mini Crunchy. Todos los derechos reservados Ciencias de la Computación - Ceibal.</p>
   </footer>
+
+  <!-- SCRIPT: El "cerebro" interactivo de nuestro menú -->
+  <script>
+    // 1. Buscamos los elementos en el HTML por su ID
+    const btnHamburguesa = document.getElementById('btn-hamburguesa');
+    const menuPrincipal = document.getElementById('menu-principal');
+    const enlacesMenu = document.querySelectorAll('.menu a');
+
+    // 2. Le decimos a la hamburguesa: "Cuando te hagan clic..."
+    btnHamburguesa.addEventListener('click', () => {
+      // Alternamos (ponemos o quitamos) la clase 'abierto' como si fuera un interruptor
+      btnHamburguesa.classList.toggle('abierto');
+      menuPrincipal.classList.toggle('abierto');
+    });
+
+    // 3. Detalle de Experiencia de Usuario (UX):
+    // Cuando el usuario toca un enlace en el celular, cerramos el menú automáticamente.
+    enlacesMenu.forEach(enlace => {
+      enlace.addEventListener('click', () => {
+        btnHamburguesa.classList.remove('abierto');
+        menuPrincipal.classList.remove('abierto');
+      });
+    });
+  </script>
 </body>
 </html>
