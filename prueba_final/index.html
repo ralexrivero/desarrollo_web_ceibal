@@ -4,25 +4,18 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>MiniFlix</title>
-
-  <!-- Enlazar el archivo style.css aquí -->
   <link rel="stylesheet" href="style.css">
-
 
 </head>
 
 <body>
   <header id="encabezado">
-    
-    <div class="menu">
-      <h1 class="logo">MiniFlix</h1>
-      <a href="#destacadas">Destacadas</a>
-    </div>
+    <h1 class="logo">MiniFlix</h1>
 
-    <nav class="menu1">
+    <nav class="menu">
+      <a href="#destacadas">Destacadas</a>
       <a href="#formulario">Suscribite</a>
     </nav>
-
     <hr>
   </header>
 
@@ -38,18 +31,6 @@
           <h3 class="titulo-pelicula">El código secreto</h3>
           <p class="sinopsis">Un enigma que cambiará el destino del mundo.</p>
         </div>
-                <div class="pelicula">
-          <img src="https://cartelera.montevideo.com.uy/imagenes_espectaculos/moviedetail13/16478.jpg" alt="Póster de El código secreto">
-
-          <h3 class="titulo-pelicula">El septimo hijo</h3>
-          <p class="sinopsis">De cara al mal reclama tu destino.</p>
-        </div>
-                <div class="pelicula">
-          <img src="https://cartelera.montevideo.com.uy/imagenes_espectaculos/moviedetail13/16475.jpg" alt="Póster de El código secreto">
-
-          <h3 class="titulo-pelicula">Foxcatcher</h3>
-          <p class="sinopsis">Un señor con el ceño fruncido.</p>
-        </div>
       </div>
       
       <hr>
@@ -64,17 +45,17 @@
     <section>
       <hr>
       <h2>Tráiler destacado</h2>
-      <iframe referrerpolicy="strict-origin-when-cross-origin" width="1840" height="1035" src="https://www.youtube.com/embed/i-AIblqxslA" title="Ceibal Institucional" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+      <video src="trailer.mp4" controls width="400"></video>
     </section>
 
     <section id="formulario">
       <hr>
       <h2>Suscribite a MiniFlix</h2>
       <form>
-        <label for="nombre">Nombre</label>
+        <label for="nombre">Nombre:</label>
         <input type="text" id="nombre" name="nombre">
 
-        <label for="email">Correo electrónico</label>
+        <label for="email">Correo electrónico:</label>
         <input type="email" id="email" name="email">
 
         <button type="submit" class="btn">Suscribirme</button>
