@@ -1,203 +1,185 @@
-/* --- ESTILOS GENERALES --- */
+/* ==========================================
+   MINIFLIX - ESTILOS FINALES
+   ========================================== */
 
+/* 1. Estilos Generales y Fondo */
 body {
-
     background-color: #141414;
-
-    color: #ffffff;
-
-    font-family: Arial, sans-serif;
-
+    color: #FFFFFF;
+    font-family: 'Arial', sans-serif;
     margin: 0;
-
     padding: 0;
-
-    text-align: center;
-
 }
 
- 
-
-/* --- ENCABEZADO (HEADER) --- */
-
+/* 2. Encabezado (Header) y Navegación */
 header {
-
-    padding: 30px 0;
-
+    background-color: #000000;
+    padding: 20px;
+    text-align: center;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
 }
 
- 
-
-h1 {
-
+header h1 {
     color: #E50914;
-
     font-size: 2.5rem;
-
-    margin: 0 0 10px 0;
-
+    margin: 0 0 15px 0;
     text-transform: uppercase;
-
+    letter-spacing: 2px;
 }
 
- 
-
-nav a {
-
-    color: #b3b3b3;
-
-    text-decoration: none;
-
-    margin: 0 15px;
-
-    font-size: 0.9rem;
-
-}
-
- 
-
-nav a:hover {
-
-    color: #ffffff;
-
-}
-
- 
-
-/* --- SECCIÓN PELÍCULAS --- */
-
-h2 {
-
-    font-size: 1.5rem;
-
-    margin-top: 40px;
-
-}
-
- 
-
-.contenedor-peliculas {
-
+nav ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
     display: flex;
-
     justify-content: center;
-
     gap: 20px;
-
-    padding: 20px;
-
-    flex-wrap: wrap;
-
 }
 
- 
-
-.tarjeta {
-
-    background-color: #181818;
-
-    border-radius: 6px;
-
-    padding: 15px;
-
-    width: 200px;
-
-    box-shadow: 0 4px 8px rgba(0,0,0,0.5);
-
-}
-
- 
-
-.tarjeta img {
-
-    width: 100%;
-
-    border-radius: 4px;
-
-}
-
- 
-
-/* --- FORMULARIO DE SUSCRIPCIÓN --- */
-
-form {
-
-    max-width: 400px;
-
-    margin: 50px auto;
-
-    padding: 20px;
-
-    background-color: #181818;
-
-    border-radius: 8px;
-
-}
-
- 
-
-input[type="text"], input[type="email"] {
-
-    width: 100%;
-
-    padding: 12px;
-
-    margin: 10px 0;
-
-    background-color: #333333;
-
-    border: 1px solid #444444;
-
-    border-radius: 4px;
-
-    color: #ffffff;
-
-    box-sizing: border-box;
-
-}
-
- 
-
-button {
-
-    width: 100%;
-
-    padding: 12px;
-
-    background-color: #E50914;
-
-    color: #ffffff;
-
-    border: none;
-
-    border-radius: 4px;
-
+nav ul li a {
+    color: #B3B3B3;
+    text-decoration: none;
     font-weight: bold;
+    transition: color 0.3s ease;
+}
 
+nav ul li a:hover {
+    color: #FFFFFF;
+}
+
+/* 3. Secciones Principales */
+main {
+    padding: 40px 20px;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+section {
+    margin-bottom: 50px;
+}
+
+section h2 {
+    color: #FFFFFF;
+    font-size: 1.8rem;
+    border-left: 4px solid #E50914;
+    padding-left: 10px;
+    margin-bottom: 25px;
+}
+
+/* 4. Grilla de Películas (Layout) */
+.peliculas-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 25px;
+}
+
+.pelicula-card {
+    background-color: #181818;
+    border-radius: 8px;
+    overflow: hidden;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
+}
+
+.pelicula-card:hover {
+    transform: scale(1.05);
+    box-shadow: 0 8px 16px rgba(229, 9, 20, 0.3);
+}
+
+.pelicula-card img {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+.pelicula-info {
+    padding: 15px;
+}
+
+.pelicula-info h3 {
+    margin: 0 0 10px 0;
+    font-size: 1.2rem;
+    color: #FFFFFF;
+}
+
+.pelicula-info p {
+    margin: 0;
+    font-size: 0.9rem;
+    color: #A3A3A3;
+    line-height: 1.4;
+}
+
+/* 5. Formulario de Suscripción */
+.form-suscripcion {
+    background-color: #181818;
+    padding: 30px;
+    border-radius: 8px;
+    max-width: 500px;
+    margin: 0 auto;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.7);
+}
+
+.form-group {
+    margin-bottom: 20px;
+}
+
+.form-group label {
+    display: block;
+    margin-bottom: 8px;
+    color: #C6C6C6;
+    font-size: 0.9rem;
+}
+
+.form-group input,
+.form-group select {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #333333;
+    border-radius: 4px;
+    background-color: #333333;
+    color: #FFFFFF;
     font-size: 1rem;
+    box-sizing: border-box;
+}
 
+.form-group input:focus,
+.form-group select:focus {
+    outline: none;
+    border-color: #E50914;
+}
+
+/* Botón de Enviar */
+.btn-enviar {
+    background-color: #E50914;
+    color: #FFFFFF;
+    border: none;
+    padding: 12px 24px;
+    font-size: 1rem;
+    font-weight: bold;
+    border-radius: 4px;
     cursor: pointer;
-
+    width: 100%;
+    transition: background-color 0.3s ease;
+    text-transform: uppercase;
+    letter-spacing: 1px;
 }
 
- 
-
-button:hover {
-
-    background-color: #f40612;
-
+.btn-enviar:hover {
+    background-color: #B81D24;
 }
 
- 
-
-/* --- PIE DE PÁGINA --- */
-
+/* 6. Pie de Página (Footer) */
 footer {
+    background-color: #000000;
+    color: #757575;
+    text-align: center;
+    padding: 30px 20px;
+    font-size: 0.85rem;
+    border-top: 1px solid #222222;
+}
 
-    padding: 30px 0;
-
-    color: #555555;
-
-    font-size: 0.8rem;
-
+footer p {
+    margin: 0;
 }
